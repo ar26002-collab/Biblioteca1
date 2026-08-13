@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmRegistroUsuario));
             picLogo = new PictureBox();
             lblNombre = new Label();
             txtNombre = new TextBox();
@@ -45,16 +46,18 @@
             // 
             // picLogo
             // 
+            picLogo.Image = (Image)resources.GetObject("picLogo.Image");
             picLogo.Location = new Point(339, 51);
             picLogo.Name = "picLogo";
-            picLogo.Size = new Size(125, 62);
+            picLogo.Size = new Size(154, 128);
+            picLogo.SizeMode = PictureBoxSizeMode.StretchImage;
             picLogo.TabIndex = 0;
             picLogo.TabStop = false;
             // 
             // lblNombre
             // 
             lblNombre.AutoSize = true;
-            lblNombre.Location = new Point(166, 174);
+            lblNombre.Location = new Point(181, 286);
             lblNombre.Name = "lblNombre";
             lblNombre.Size = new Size(67, 20);
             lblNombre.TabIndex = 1;
@@ -62,7 +65,7 @@
             // 
             // txtNombre
             // 
-            txtNombre.Location = new Point(239, 167);
+            txtNombre.Location = new Point(254, 279);
             txtNombre.Name = "txtNombre";
             txtNombre.Size = new Size(125, 27);
             txtNombre.TabIndex = 2;
@@ -70,7 +73,7 @@
             // lblCorreo
             // 
             lblCorreo.AutoSize = true;
-            lblCorreo.Location = new Point(176, 230);
+            lblCorreo.Location = new Point(191, 346);
             lblCorreo.Name = "lblCorreo";
             lblCorreo.Size = new Size(57, 20);
             lblCorreo.TabIndex = 3;
@@ -78,7 +81,7 @@
             // 
             // txtCorreo
             // 
-            txtCorreo.Location = new Point(239, 223);
+            txtCorreo.Location = new Point(254, 339);
             txtCorreo.Name = "txtCorreo";
             txtCorreo.Size = new Size(125, 27);
             txtCorreo.TabIndex = 4;
@@ -86,7 +89,7 @@
             // lblTipoUsuario
             // 
             lblTipoUsuario.AutoSize = true;
-            lblTipoUsuario.Location = new Point(118, 295);
+            lblTipoUsuario.Location = new Point(133, 405);
             lblTipoUsuario.Name = "lblTipoUsuario";
             lblTipoUsuario.Size = new Size(115, 20);
             lblTipoUsuario.TabIndex = 5;
@@ -95,7 +98,7 @@
             // lblPassword
             // 
             lblPassword.AutoSize = true;
-            lblPassword.Location = new Point(147, 366);
+            lblPassword.Location = new Point(162, 459);
             lblPassword.Name = "lblPassword";
             lblPassword.Size = new Size(86, 20);
             lblPassword.TabIndex = 7;
@@ -103,7 +106,7 @@
             // 
             // txtPassword
             // 
-            txtPassword.Location = new Point(240, 359);
+            txtPassword.Location = new Point(254, 452);
             txtPassword.Name = "txtPassword";
             txtPassword.Size = new Size(125, 27);
             txtPassword.TabIndex = 8;
@@ -111,7 +114,7 @@
             // lblConfirmarPassword
             // 
             lblConfirmarPassword.AutoSize = true;
-            lblConfirmarPassword.Location = new Point(79, 441);
+            lblConfirmarPassword.Location = new Point(94, 514);
             lblConfirmarPassword.Name = "lblConfirmarPassword";
             lblConfirmarPassword.Size = new Size(154, 20);
             lblConfirmarPassword.TabIndex = 9;
@@ -119,14 +122,14 @@
             // 
             // txtConfirmarPassword
             // 
-            txtConfirmarPassword.Location = new Point(240, 434);
+            txtConfirmarPassword.Location = new Point(254, 507);
             txtConfirmarPassword.Name = "txtConfirmarPassword";
             txtConfirmarPassword.Size = new Size(125, 27);
             txtConfirmarPassword.TabIndex = 10;
             // 
             // btnRegistrar
             // 
-            btnRegistrar.Location = new Point(325, 517);
+            btnRegistrar.Location = new Point(325, 583);
             btnRegistrar.Name = "btnRegistrar";
             btnRegistrar.Size = new Size(125, 51);
             btnRegistrar.TabIndex = 11;
@@ -136,16 +139,16 @@
             // cboTipoUsuario
             // 
             cboTipoUsuario.FormattingEnabled = true;
-            cboTipoUsuario.Location = new Point(240, 287);
+            cboTipoUsuario.Location = new Point(254, 397);
             cboTipoUsuario.Name = "cboTipoUsuario";
             cboTipoUsuario.Size = new Size(151, 28);
             cboTipoUsuario.TabIndex = 12;
             // 
-            // Form3
+            // frmRegistroUsuario
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 601);
+            ClientSize = new Size(800, 663);
             Controls.Add(cboTipoUsuario);
             Controls.Add(btnRegistrar);
             Controls.Add(txtConfirmarPassword);
@@ -158,7 +161,7 @@
             Controls.Add(txtNombre);
             Controls.Add(lblNombre);
             Controls.Add(picLogo);
-            Name = "Form3";
+            Name = "frmRegistroUsuario";
             Text = "REGISTRO DE USUARIO - LIBRERIA ML";
             ((System.ComponentModel.ISupportInitialize)picLogo).EndInit();
             ResumeLayout(false);

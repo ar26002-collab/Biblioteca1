@@ -28,33 +28,28 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMenuPrincipal));
             lblBienvenida = new Label();
-            picLogo = new PictureBox();
             btnNavLibros = new Button();
             btnNavUsuarios = new Button();
             btnNavPrestamos = new Button();
             btnNavDevoluciones = new Button();
             btnNavReportes = new Button();
+            picLogo = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)picLogo).BeginInit();
             SuspendLayout();
             // 
             // lblBienvenida
             // 
             lblBienvenida.AutoSize = true;
-            lblBienvenida.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblBienvenida.Location = new Point(236, 124);
+            lblBienvenida.BackColor = Color.Transparent;
+            lblBienvenida.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblBienvenida.ForeColor = SystemColors.InfoText;
+            lblBienvenida.Location = new Point(231, 218);
             lblBienvenida.Name = "lblBienvenida";
-            lblBienvenida.Size = new Size(314, 23);
+            lblBienvenida.Size = new Size(422, 31);
             lblBienvenida.TabIndex = 0;
             lblBienvenida.Text = "HOLA, BIENVENIDO/A A LIBRERIA ML";
-            // 
-            // picLogo
-            // 
-            picLogo.Location = new Point(325, 33);
-            picLogo.Name = "picLogo";
-            picLogo.Size = new Size(125, 62);
-            picLogo.TabIndex = 1;
-            picLogo.TabStop = false;
             // 
             // btnNavLibros
             // 
@@ -101,17 +96,30 @@
             btnNavReportes.Text = "Reportes";
             btnNavReportes.UseVisualStyleBackColor = true;
             // 
+            // picLogo
+            // 
+            picLogo.BackColor = Color.Transparent;
+            picLogo.Image = (Image)resources.GetObject("picLogo.Image");
+            picLogo.Location = new Point(320, 23);
+            picLogo.Name = "picLogo";
+            picLogo.Size = new Size(191, 137);
+            picLogo.SizeMode = PictureBoxSizeMode.StretchImage;
+            picLogo.TabIndex = 7;
+            picLogo.TabStop = false;
+            // 
             // frmMenuPrincipal
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.Control;
+            BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(800, 517);
+            Controls.Add(picLogo);
             Controls.Add(btnNavReportes);
             Controls.Add(btnNavDevoluciones);
             Controls.Add(btnNavPrestamos);
             Controls.Add(btnNavUsuarios);
             Controls.Add(btnNavLibros);
-            Controls.Add(picLogo);
             Controls.Add(lblBienvenida);
             Name = "frmMenuPrincipal";
             StartPosition = FormStartPosition.CenterScreen;
@@ -124,11 +132,11 @@
         #endregion
 
         private Label lblBienvenida;
-        private PictureBox picLogo;
         private Button btnNavLibros;
         private Button btnNavUsuarios;
         private Button btnNavPrestamos;
         private Button btnNavDevoluciones;
         private Button btnNavReportes;
+        private PictureBox picLogo;
     }
 }

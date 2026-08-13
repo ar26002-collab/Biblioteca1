@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmDevoluciones));
             picLogo = new PictureBox();
             lblEstudiante = new Label();
             label2 = new Label();
@@ -37,7 +38,6 @@
             cboLibro = new ComboBox();
             cboEstadoLibro = new ComboBox();
             dtpFechaDevolucion = new DateTimePicker();
-            btnNuevo = new Button();
             button2 = new Button();
             btnActualizar = new Button();
             btnEliminar = new Button();
@@ -49,9 +49,11 @@
             // 
             // picLogo
             // 
-            picLogo.Location = new Point(333, 19);
+            picLogo.Image = (Image)resources.GetObject("picLogo.Image");
+            picLogo.Location = new Point(311, 12);
             picLogo.Name = "picLogo";
-            picLogo.Size = new Size(125, 95);
+            picLogo.Size = new Size(136, 122);
+            picLogo.SizeMode = PictureBoxSizeMode.StretchImage;
             picLogo.TabIndex = 0;
             picLogo.TabStop = false;
             // 
@@ -121,47 +123,38 @@
             dtpFechaDevolucion.Size = new Size(250, 27);
             dtpFechaDevolucion.TabIndex = 8;
             // 
-            // btnNuevo
-            // 
-            btnNuevo.Location = new Point(27, 445);
-            btnNuevo.Name = "btnNuevo";
-            btnNuevo.Size = new Size(94, 29);
-            btnNuevo.TabIndex = 9;
-            btnNuevo.Text = "Nuevo";
-            btnNuevo.UseVisualStyleBackColor = true;
-            // 
             // button2
             // 
-            button2.Location = new Point(168, 445);
+            button2.Location = new Point(75, 434);
             button2.Name = "button2";
-            button2.Size = new Size(94, 51);
+            button2.Size = new Size(187, 51);
             button2.TabIndex = 10;
             button2.Text = "Registrar Devolución";
             button2.UseVisualStyleBackColor = true;
             // 
             // btnActualizar
             // 
-            btnActualizar.Location = new Point(311, 445);
+            btnActualizar.Location = new Point(311, 439);
             btnActualizar.Name = "btnActualizar";
-            btnActualizar.Size = new Size(94, 29);
+            btnActualizar.Size = new Size(94, 40);
             btnActualizar.TabIndex = 11;
             btnActualizar.Text = "Actualizar";
             btnActualizar.UseVisualStyleBackColor = true;
             // 
             // btnEliminar
             // 
-            btnEliminar.Location = new Point(463, 445);
+            btnEliminar.Location = new Point(462, 439);
             btnEliminar.Name = "btnEliminar";
-            btnEliminar.Size = new Size(94, 29);
+            btnEliminar.Size = new Size(94, 40);
             btnEliminar.TabIndex = 12;
             btnEliminar.Text = "Eliminar";
             btnEliminar.UseVisualStyleBackColor = true;
             // 
             // btnLimpiar
             // 
-            btnLimpiar.Location = new Point(634, 445);
+            btnLimpiar.Location = new Point(634, 439);
             btnLimpiar.Name = "btnLimpiar";
-            btnLimpiar.Size = new Size(94, 29);
+            btnLimpiar.Size = new Size(94, 40);
             btnLimpiar.TabIndex = 13;
             btnLimpiar.Text = "Limpiar";
             btnLimpiar.UseVisualStyleBackColor = true;
@@ -185,7 +178,6 @@
             Controls.Add(btnEliminar);
             Controls.Add(btnActualizar);
             Controls.Add(button2);
-            Controls.Add(btnNuevo);
             Controls.Add(dtpFechaDevolucion);
             Controls.Add(cboEstadoLibro);
             Controls.Add(cboLibro);
@@ -215,7 +207,6 @@
         private ComboBox cboLibro;
         private ComboBox cboEstadoLibro;
         private DateTimePicker dtpFechaDevolucion;
-        private Button btnNuevo;
         private Button button2;
         private Button btnActualizar;
         private Button btnEliminar;

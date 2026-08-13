@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmReportes));
             picLogo = new PictureBox();
             lblFechaInicial = new Label();
             lblFechaFinal = new Label();
@@ -45,16 +46,18 @@
             // 
             // picLogo
             // 
+            picLogo.Image = (Image)resources.GetObject("picLogo.Image");
             picLogo.Location = new Point(277, 26);
             picLogo.Name = "picLogo";
-            picLogo.Size = new Size(125, 93);
+            picLogo.Size = new Size(185, 147);
+            picLogo.SizeMode = PictureBoxSizeMode.StretchImage;
             picLogo.TabIndex = 0;
             picLogo.TabStop = false;
             // 
             // lblFechaInicial
             // 
             lblFechaInicial.AutoSize = true;
-            lblFechaInicial.Location = new Point(156, 167);
+            lblFechaInicial.Location = new Point(178, 250);
             lblFechaInicial.Name = "lblFechaInicial";
             lblFechaInicial.Size = new Size(93, 20);
             lblFechaInicial.TabIndex = 1;
@@ -63,7 +66,7 @@
             // lblFechaFinal
             // 
             lblFechaFinal.AutoSize = true;
-            lblFechaFinal.Location = new Point(164, 241);
+            lblFechaFinal.Location = new Point(186, 324);
             lblFechaFinal.Name = "lblFechaFinal";
             lblFechaFinal.Size = new Size(85, 20);
             lblFechaFinal.TabIndex = 2;
@@ -72,7 +75,7 @@
             // lblTipoReporte
             // 
             lblTipoReporte.AutoSize = true;
-            lblTipoReporte.Location = new Point(133, 313);
+            lblTipoReporte.Location = new Point(155, 393);
             lblTipoReporte.Name = "lblTipoReporte";
             lblTipoReporte.Size = new Size(116, 20);
             lblTipoReporte.TabIndex = 3;
@@ -80,14 +83,14 @@
             // 
             // dtpFechaInicial
             // 
-            dtpFechaInicial.Location = new Point(258, 160);
+            dtpFechaInicial.Location = new Point(277, 243);
             dtpFechaInicial.Name = "dtpFechaInicial";
             dtpFechaInicial.Size = new Size(250, 27);
             dtpFechaInicial.TabIndex = 4;
             // 
             // dtpFechaFinal
             // 
-            dtpFechaFinal.Location = new Point(258, 236);
+            dtpFechaFinal.Location = new Point(277, 317);
             dtpFechaFinal.Name = "dtpFechaFinal";
             dtpFechaFinal.Size = new Size(250, 27);
             dtpFechaFinal.TabIndex = 5;
@@ -95,14 +98,14 @@
             // cboTipoReporte
             // 
             cboTipoReporte.FormattingEnabled = true;
-            cboTipoReporte.Location = new Point(258, 305);
+            cboTipoReporte.Location = new Point(277, 385);
             cboTipoReporte.Name = "cboTipoReporte";
             cboTipoReporte.Size = new Size(151, 28);
             cboTipoReporte.TabIndex = 6;
             // 
             // btnImprimirPdf
             // 
-            btnImprimirPdf.Location = new Point(120, 436);
+            btnImprimirPdf.Location = new Point(118, 483);
             btnImprimirPdf.Name = "btnImprimirPdf";
             btnImprimirPdf.Size = new Size(94, 48);
             btnImprimirPdf.TabIndex = 7;
@@ -111,7 +114,7 @@
             // 
             // btnExportarPdf
             // 
-            btnExportarPdf.Location = new Point(308, 436);
+            btnExportarPdf.Location = new Point(352, 483);
             btnExportarPdf.Name = "btnExportarPdf";
             btnExportarPdf.Size = new Size(94, 48);
             btnExportarPdf.TabIndex = 8;
@@ -120,7 +123,7 @@
             // 
             // btnLimpiar
             // 
-            btnLimpiar.Location = new Point(506, 436);
+            btnLimpiar.Location = new Point(587, 483);
             btnLimpiar.Name = "btnLimpiar";
             btnLimpiar.Size = new Size(94, 48);
             btnLimpiar.TabIndex = 9;
@@ -130,7 +133,7 @@
             // dgvReportes
             // 
             dgvReportes.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvReportes.Location = new Point(61, 519);
+            dgvReportes.Location = new Point(68, 556);
             dgvReportes.Name = "dgvReportes";
             dgvReportes.RowHeadersWidth = 51;
             dgvReportes.Size = new Size(666, 188);
@@ -140,7 +143,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 739);
+            ClientSize = new Size(800, 780);
             Controls.Add(dgvReportes);
             Controls.Add(btnLimpiar);
             Controls.Add(btnExportarPdf);

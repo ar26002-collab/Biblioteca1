@@ -1,8 +1,8 @@
 namespace Biblioteca1
 {
-    public partial class frmBiblioteca : System.Windows.Forms.Form
+    public partial class frmLibros : System.Windows.Forms.Form
     {
-        public frmBiblioteca()
+        public frmLibros()
         {
             InitializeComponent();
         }

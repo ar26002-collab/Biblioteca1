@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPrestamos));
             lblEstudiante = new Label();
             lblLibro = new Label();
             lblEstadoLibro = new Label();
@@ -36,7 +37,6 @@
             cboLibro = new ComboBox();
             cboEstadoLibro = new ComboBox();
             dtpFechaPrestamo = new DateTimePicker();
-            btnNuevo = new Button();
             btnRegistrarPrestamo = new Button();
             btnActualizar = new Button();
             btnEliminar = new Button();
@@ -50,7 +50,7 @@
             // lblEstudiante
             // 
             lblEstudiante.AutoSize = true;
-            lblEstudiante.Location = new Point(96, 130);
+            lblEstudiante.Location = new Point(157, 174);
             lblEstudiante.Name = "lblEstudiante";
             lblEstudiante.Size = new Size(81, 20);
             lblEstudiante.TabIndex = 0;
@@ -60,7 +60,7 @@
             // lblLibro
             // 
             lblLibro.AutoSize = true;
-            lblLibro.Location = new Point(131, 184);
+            lblLibro.Location = new Point(192, 238);
             lblLibro.Name = "lblLibro";
             lblLibro.Size = new Size(46, 20);
             lblLibro.TabIndex = 1;
@@ -69,7 +69,7 @@
             // lblEstadoLibro
             // 
             lblEstadoLibro.AutoSize = true;
-            lblEstadoLibro.Location = new Point(60, 238);
+            lblEstadoLibro.Location = new Point(121, 301);
             lblEstadoLibro.Name = "lblEstadoLibro";
             lblEstadoLibro.Size = new Size(117, 20);
             lblEstadoLibro.TabIndex = 2;
@@ -78,7 +78,7 @@
             // lblFechaPrestamo
             // 
             lblFechaPrestamo.AutoSize = true;
-            lblFechaPrestamo.Location = new Point(40, 293);
+            lblFechaPrestamo.Location = new Point(101, 360);
             lblFechaPrestamo.Name = "lblFechaPrestamo";
             lblFechaPrestamo.Size = new Size(137, 20);
             lblFechaPrestamo.TabIndex = 3;
@@ -86,7 +86,7 @@
             // 
             // txtEstudiante
             // 
-            txtEstudiante.Location = new Point(183, 127);
+            txtEstudiante.Location = new Point(244, 167);
             txtEstudiante.Name = "txtEstudiante";
             txtEstudiante.Size = new Size(125, 27);
             txtEstudiante.TabIndex = 4;
@@ -94,7 +94,7 @@
             // cboLibro
             // 
             cboLibro.FormattingEnabled = true;
-            cboLibro.Location = new Point(183, 181);
+            cboLibro.Location = new Point(244, 230);
             cboLibro.Name = "cboLibro";
             cboLibro.Size = new Size(151, 28);
             cboLibro.TabIndex = 5;
@@ -102,30 +102,21 @@
             // cboEstadoLibro
             // 
             cboEstadoLibro.FormattingEnabled = true;
-            cboEstadoLibro.Location = new Point(183, 235);
+            cboEstadoLibro.Location = new Point(244, 293);
             cboEstadoLibro.Name = "cboEstadoLibro";
             cboEstadoLibro.Size = new Size(151, 28);
             cboEstadoLibro.TabIndex = 6;
             // 
             // dtpFechaPrestamo
             // 
-            dtpFechaPrestamo.Location = new Point(183, 288);
+            dtpFechaPrestamo.Location = new Point(244, 355);
             dtpFechaPrestamo.Name = "dtpFechaPrestamo";
             dtpFechaPrestamo.Size = new Size(250, 27);
             dtpFechaPrestamo.TabIndex = 7;
             // 
-            // btnNuevo
-            // 
-            btnNuevo.Location = new Point(40, 400);
-            btnNuevo.Name = "btnNuevo";
-            btnNuevo.Size = new Size(94, 41);
-            btnNuevo.TabIndex = 8;
-            btnNuevo.Text = "Nuevo";
-            btnNuevo.UseVisualStyleBackColor = true;
-            // 
             // btnRegistrarPrestamo
             // 
-            btnRegistrarPrestamo.Location = new Point(183, 400);
+            btnRegistrarPrestamo.Location = new Point(60, 428);
             btnRegistrarPrestamo.Name = "btnRegistrarPrestamo";
             btnRegistrarPrestamo.Size = new Size(148, 41);
             btnRegistrarPrestamo.TabIndex = 9;
@@ -134,7 +125,7 @@
             // 
             // btnActualizar
             // 
-            btnActualizar.Location = new Point(378, 400);
+            btnActualizar.Location = new Point(252, 428);
             btnActualizar.Name = "btnActualizar";
             btnActualizar.Size = new Size(94, 41);
             btnActualizar.TabIndex = 10;
@@ -143,7 +134,7 @@
             // 
             // btnEliminar
             // 
-            btnEliminar.Location = new Point(523, 400);
+            btnEliminar.Location = new Point(400, 428);
             btnEliminar.Name = "btnEliminar";
             btnEliminar.Size = new Size(94, 41);
             btnEliminar.TabIndex = 11;
@@ -152,7 +143,7 @@
             // 
             // btnLimpiar
             // 
-            btnLimpiar.Location = new Point(672, 400);
+            btnLimpiar.Location = new Point(557, 428);
             btnLimpiar.Name = "btnLimpiar";
             btnLimpiar.Size = new Size(94, 41);
             btnLimpiar.TabIndex = 12;
@@ -162,7 +153,7 @@
             // dgvPrestamos
             // 
             dgvPrestamos.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvPrestamos.Location = new Point(71, 465);
+            dgvPrestamos.Location = new Point(72, 501);
             dgvPrestamos.Name = "dgvPrestamos";
             dgvPrestamos.RowHeadersWidth = 51;
             dgvPrestamos.Size = new Size(629, 188);
@@ -170,9 +161,11 @@
             // 
             // picLogo
             // 
-            picLogo.Location = new Point(337, 12);
+            picLogo.Image = (Image)resources.GetObject("picLogo.Image");
+            picLogo.Location = new Point(318, 12);
             picLogo.Name = "picLogo";
-            picLogo.Size = new Size(125, 62);
+            picLogo.Size = new Size(144, 125);
+            picLogo.SizeMode = PictureBoxSizeMode.StretchImage;
             picLogo.TabIndex = 14;
             picLogo.TabStop = false;
             // 
@@ -180,14 +173,13 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 697);
+            ClientSize = new Size(800, 726);
             Controls.Add(picLogo);
             Controls.Add(dgvPrestamos);
             Controls.Add(btnLimpiar);
             Controls.Add(btnEliminar);
             Controls.Add(btnActualizar);
             Controls.Add(btnRegistrarPrestamo);
-            Controls.Add(btnNuevo);
             Controls.Add(dtpFechaPrestamo);
             Controls.Add(cboEstadoLibro);
             Controls.Add(cboLibro);
@@ -215,7 +207,6 @@
         private ComboBox cboLibro;
         private ComboBox cboEstadoLibro;
         private DateTimePicker dtpFechaPrestamo;
-        private Button btnNuevo;
         private Button btnRegistrarPrestamo;
         private Button btnActualizar;
         private Button btnEliminar;

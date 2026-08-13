@@ -1,6 +1,6 @@
 ﻿namespace Biblioteca1
 {
-    partial class frmLogin
+    partial class frmInicioSesion
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            piclogo = new PictureBox();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmInicioSesion));
             lblCorreo = new Label();
             txtCorreo = new TextBox();
             lblPassword = new Label();
@@ -37,16 +37,9 @@
             btnGoogle = new Button();
             btnFacebook = new Button();
             lnkOlvidastePassword = new LinkLabel();
+            piclogo = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)piclogo).BeginInit();
             SuspendLayout();
-            // 
-            // piclogo
-            // 
-            piclogo.Location = new Point(320, 12);
-            piclogo.Name = "piclogo";
-            piclogo.Size = new Size(111, 86);
-            piclogo.TabIndex = 0;
-            piclogo.TabStop = false;
             // 
             // lblCorreo
             // 
@@ -98,7 +91,7 @@
             btnGoogle.TabIndex = 6;
             btnGoogle.Text = "Google";
             btnGoogle.UseVisualStyleBackColor = true;
-            btnGoogle.Click += this.button2_Click;
+            btnGoogle.Click += button2_Click;
             // 
             // btnFacebook
             // 
@@ -119,10 +112,22 @@
             lnkOlvidastePassword.TabStop = true;
             lnkOlvidastePassword.Text = "¿Olvidaste tu contraseña?";
             // 
-            // frmLogin
+            // piclogo
+            // 
+            piclogo.Image = (Image)resources.GetObject("piclogo.Image");
+            piclogo.Location = new Point(297, 12);
+            piclogo.Name = "piclogo";
+            piclogo.Size = new Size(143, 114);
+            piclogo.SizeMode = PictureBoxSizeMode.StretchImage;
+            piclogo.TabIndex = 0;
+            piclogo.TabStop = false;
+            // 
+            // frmInicioSesion
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(800, 450);
             Controls.Add(lnkOlvidastePassword);
             Controls.Add(btnFacebook);
@@ -133,7 +138,9 @@
             Controls.Add(txtCorreo);
             Controls.Add(lblCorreo);
             Controls.Add(piclogo);
-            Name = "frmLogin";
+            Cursor = Cursors.PanWest;
+            ForeColor = SystemColors.ControlText;
+            Name = "frmInicioSesion";
             Text = "INICIO DE SESIÓN - LIBRERIA ML";
             ((System.ComponentModel.ISupportInitialize)piclogo).EndInit();
             ResumeLayout(false);
@@ -141,8 +148,6 @@
         }
 
         #endregion
-
-        private PictureBox piclogo;
         private Label lblCorreo;
         private TextBox txtCorreo;
         private Label lblPassword;
@@ -151,5 +156,6 @@
         private Button btnGoogle;
         private Button btnFacebook;
         private LinkLabel lnkOlvidastePassword;
+        private PictureBox piclogo;
     }
 }

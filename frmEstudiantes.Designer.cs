@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmEstudiantes));
             picLogo = new PictureBox();
             lblNombre = new Label();
             label2 = new Label();
@@ -47,16 +48,18 @@
             // 
             // picLogo
             // 
-            picLogo.Location = new Point(315, 24);
+            picLogo.Image = (Image)resources.GetObject("picLogo.Image");
+            picLogo.Location = new Point(296, 31);
             picLogo.Name = "picLogo";
-            picLogo.Size = new Size(125, 62);
+            picLogo.Size = new Size(143, 136);
+            picLogo.SizeMode = PictureBoxSizeMode.StretchImage;
             picLogo.TabIndex = 0;
             picLogo.TabStop = false;
             // 
             // lblNombre
             // 
             lblNombre.AutoSize = true;
-            lblNombre.Location = new Point(202, 139);
+            lblNombre.Location = new Point(223, 255);
             lblNombre.Name = "lblNombre";
             lblNombre.Size = new Size(67, 20);
             lblNombre.TabIndex = 1;
@@ -65,7 +68,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(155, 221);
+            label2.Location = new Point(173, 313);
             label2.Name = "label2";
             label2.Size = new Size(117, 20);
             label2.TabIndex = 2;
@@ -74,7 +77,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(133, 305);
+            label3.Location = new Point(154, 370);
             label3.Name = "label3";
             label3.Size = new Size(136, 20);
             label3.TabIndex = 3;
@@ -82,14 +85,14 @@
             // 
             // txtContacto
             // 
-            txtContacto.Location = new Point(296, 298);
+            txtContacto.Location = new Point(296, 363);
             txtContacto.Name = "txtContacto";
             txtContacto.Size = new Size(125, 27);
             txtContacto.TabIndex = 4;
             // 
             // txtNombre
             // 
-            txtNombre.Location = new Point(296, 132);
+            txtNombre.Location = new Point(296, 248);
             txtNombre.Name = "txtNombre";
             txtNombre.Size = new Size(125, 27);
             txtNombre.TabIndex = 5;
@@ -97,14 +100,14 @@
             // cboTipoUsuario
             // 
             cboTipoUsuario.FormattingEnabled = true;
-            cboTipoUsuario.Location = new Point(296, 213);
+            cboTipoUsuario.Location = new Point(296, 305);
             cboTipoUsuario.Name = "cboTipoUsuario";
             cboTipoUsuario.Size = new Size(151, 28);
             cboTipoUsuario.TabIndex = 6;
             // 
             // btnNuevo
             // 
-            btnNuevo.Location = new Point(37, 403);
+            btnNuevo.Location = new Point(46, 468);
             btnNuevo.Name = "btnNuevo";
             btnNuevo.Size = new Size(94, 29);
             btnNuevo.TabIndex = 7;
@@ -113,7 +116,7 @@
             // 
             // btnAceptar
             // 
-            btnAceptar.Location = new Point(190, 403);
+            btnAceptar.Location = new Point(178, 468);
             btnAceptar.Name = "btnAceptar";
             btnAceptar.Size = new Size(94, 29);
             btnAceptar.TabIndex = 8;
@@ -122,7 +125,7 @@
             // 
             // btnActualizar
             // 
-            btnActualizar.Location = new Point(346, 403);
+            btnActualizar.Location = new Point(315, 468);
             btnActualizar.Name = "btnActualizar";
             btnActualizar.Size = new Size(94, 29);
             btnActualizar.TabIndex = 9;
@@ -131,7 +134,7 @@
             // 
             // btnEliminar
             // 
-            btnEliminar.Location = new Point(498, 403);
+            btnEliminar.Location = new Point(466, 468);
             btnEliminar.Name = "btnEliminar";
             btnEliminar.Size = new Size(94, 29);
             btnEliminar.TabIndex = 10;
@@ -140,7 +143,7 @@
             // 
             // btnLimpiar
             // 
-            btnLimpiar.Location = new Point(652, 403);
+            btnLimpiar.Location = new Point(619, 468);
             btnLimpiar.Name = "btnLimpiar";
             btnLimpiar.Size = new Size(94, 29);
             btnLimpiar.TabIndex = 11;
@@ -150,7 +153,7 @@
             // dgvEstudiantes
             // 
             dgvEstudiantes.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvEstudiantes.Location = new Point(100, 475);
+            dgvEstudiantes.Location = new Point(99, 560);
             dgvEstudiantes.Name = "dgvEstudiantes";
             dgvEstudiantes.RowHeadersWidth = 51;
             dgvEstudiantes.Size = new Size(605, 157);
@@ -160,7 +163,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 723);
+            ClientSize = new Size(800, 758);
             Controls.Add(dgvEstudiantes);
             Controls.Add(btnLimpiar);
             Controls.Add(btnEliminar);

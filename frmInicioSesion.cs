@@ -8,9 +8,9 @@ using System.Windows.Forms;
 
 namespace Biblioteca1
 {
-    public partial class frmLogin : Form
+    public partial class frmInicioSesion : Form
     {
-        public frmLogin()
+        public frmInicioSesion()
         {
             InitializeComponent();
         }
